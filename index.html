@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Qualifications</title>
+  <link rel="stylesheet" href="./Style1.css" />
+</head>
+<body>
+
+  <!-- Outline SVG icon set (no external libs) -->
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8" />
+      <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="i-gear" viewBox="0 0 24 24">
+      <path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M19.4 12a7.6 7.6 0 0 0-.1-1l2-1.6-2-3.4-2.4 1a8.4 8.4 0 0 0-1.7-1l-.4-2.6H9.2L8.8 6a8.4 8.4 0 0 0-1.7 1l-2.4-1-2 3.4 2 1.6a7.6 7.6 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a8.4 8.4 0 0 0 1.7 1l.4 2.6h5.6l.4-2.6a8.4 8.4 0 0 0 1.7-1l2.4 1 2-3.4-2-1.6c.1-.3.1-.6.1-1Z"
+            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="i-book" viewBox="0 0 24 24">
+      <path d="M4.5 5.5c0-1.1.9-2 2-2H20v15.5H6.5c-1.1 0-2 .9-2 2V5.5Z"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M20 3.5v15.5H6.5c-1.1 0-2 .9-2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="i-award" viewBox="0 0 24 24">
+      <path d="M12 13a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M9.5 12.3 8 21l4-2 4 2-1.5-8.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="i-cap" viewBox="0 0 24 24">
+      <path d="M2.5 9.5 12 5l9.5 4.5L12 14 2.5 9.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M6.5 11.5V16c0 1.5 2.5 2.7 5.5 2.7s5.5-1.2 5.5-2.7v-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M21.5 10v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="i-plus" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="i-trash" viewBox="0 0 24 24">
+      <path d="M4 7h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M9 7V5h6v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 7l1 14h8l1-14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M10 11v7M14 11v7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="i-alert" viewBox="0 0 24 24">
+      <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M12 7v7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M12 17.2h.01" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="i-chevron" viewBox="0 0 24 24">
+      <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="i-x" viewBox="0 0 24 24">
+      <path d="M7 7l10 10M17 7 7 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <div class="page">
+    <header class="top">
+      <div class="brand">
+        <div class="logo-block">
+          <img class="logo-img" src="./coolams_logo.png" alt="Company logo" />
+          <div class="logo-lines">
+            <div class="logo-line"></div>
+            <div class="logo-line short"></div>
+          </div>
+        </div>
+
+        <div class="top-icons">
+          <button class="top-icon" type="button" aria-label="Messages">
+            <svg class="icon"><use href="#i-mail"></use></svg>
+          </button>
+          <button class="top-icon" type="button" aria-label="Settings">
+            <svg class="icon"><use href="#i-gear"></use></svg>
+          </button>
+        </div>
+      </div>
+
+      <h1 class="title">Your Qualifications</h1>
+      <p class="subtitle">Tell us about your Ofqual-regulated qualifications.</p>
+
+      <div class="progress">
+        <div class="progress-track">
+          <div class="progress-fill" id="barFill"></div>
+        </div>
+        <div class="progress-label"><span id="pct">0%</span> complete</div>
+      </div>
+    </header>
+
+    <main class="content card">
+      <!-- GCSE -->
+      <section class="block" data-section="gcse">
+        <div class="block-head">
+          <div class="block-left">
+            <span class="block-ico"><svg class="icon"><use href="#i-book"></use></svg></span>
+            <div>
+              <div class="block-title">GCSE or Equivalent</div>
+              <div class="block-sub">Including Maths and English (required)</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="gcseEmpty" class="empty">
+          <div class="empty-line">
+            <span class="empty-ico"><svg class="icon"><use href="#i-mail"></use></svg></span>
+            <span class="empty-text">No GCSEs added yet</span>
+          </div>
+          <button class="add-dashed" data-open-modal="gcse" type="button">
+            <svg class="icon"><use href="#i-plus"></use></svg>
+            Add GCSE or Equivalent
+          </button>
+        </div>
+
+        <div id="gcseTableWrap" class="table-wrap hidden">
+          <table>
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Level/Type</th>
+                <th>Grade</th>
+                <th>Year</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="gcseTbody"></tbody>
+          </table>
+          <button class="add-dashed" data-open-modal="gcse" type="button">
+            <svg class="icon"><use href="#i-plus"></use></svg>
+            Add GCSE or Equivalent
+          </button>
+        </div>
+      </section>
+
+      <!-- Level 3 -->
+      <section class="block" data-section="l3">
+        <div class="block-head">
+          <div class="block-left">
+            <span class="block-ico"><svg class="icon"><use href="#i-award"></use></svg></span>
+            <div>
+              <div class="block-title">Level 3 Qualification</div>
+              <div class="block-sub">A Levels, T Levels, BTEC Level 3 or Level 3 Apprenticeships</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="l3Empty" class="empty">
+          <div class="empty-line">
+            <span class="empty-ico"><svg class="icon"><use href="#i-mail"></use></svg></span>
+            <span class="empty-text">No Level 3 Qualifications added yet</span>
+          </div>
+          <button class="add-dashed" data-open-modal="l3" type="button">
+            <svg class="icon"><use href="#i-plus"></use></svg>
+            Add Level 3 Qualification
+          </button>
+        </div>
+
+        <div id="l3TableWrap" class="table-wrap hidden">
+          <table>
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Level/Type</th>
+                <th>Grade</th>
+                <th>Year</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="l3Tbody"></tbody>
+          </table>
+          <button class="add-dashed" data-open-modal="l3" type="button">
+            <svg class="icon"><use href="#i-plus"></use></svg>
+            Add Level 3 Qualification
+          </button>
+        </div>
+      </section>
+
+      <!-- Higher -->
+      <section class="block" data-section="higher">
+        <div class="block-head">
+          <div class="block-left">
+            <span class="block-ico"><svg class="icon"><use href="#i-cap"></use></svg></span>
+            <div>
+              <div class="block-title">Higher Level Qualifications</div>
+              <div class="block-sub">Levels 4–6: Degrees, Foundation Degrees and Diplomas</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="higherEmpty" class="empty">
+          <div class="empty-line">
+            <span class="empty-ico"><svg class="icon"><use href="#i-mail"></use></svg></span>
+            <span class="empty-text">No Higher Level Qualifications added yet</span>
+          </div>
+          <button class="add-dashed" data-open-modal="higher" type="button">
+            <svg class="icon"><use href="#i-plus"></use></svg>
+            Add Higher Level Qualification
+          </button>
+        </div>
+
+        <div id="higherTableWrap" class="table-wrap hidden">
+          <table>
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Level/Type</th>
+                <th>Grade</th>
+                <th>Year</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="higherTbody"></tbody>
+          </table>
+          <button class="add-dashed" data-open-modal="higher" type="button">
+            <svg class="icon"><use href="#i-plus"></use></svg>
+            Add Higher Level Qualification
+          </button>
+        </div>
+      </section>
+
+      <!-- Extenuating dropdown -->
+      <section class="ext-card" id="extCard">
+        <button class="ext-head" id="extToggle" type="button" aria-expanded="false">
+          <span class="ext-alert"><svg class="icon"><use href="#i-alert"></use></svg></span>
+          <div class="ext-text">
+            <div class="ext-title">Extenuating Circumstances <span class="muted">(optional)</span></div>
+            <div class="ext-sub">Any factors that may have affected any of your qualifications</div>
+          </div>
+          <span class="ext-chev"><svg class="icon"><use href="#i-chevron"></use></svg></span>
+        </button>
+
+        <div class="ext-body" id="extBody">
+          <label for="extenuating" class="ext-label">Please describe any circumstances that have affected your studies or exam results</label>
+          <textarea id="extenuating" placeholder="e.g., personal circumstances, health issues, disruptions during exams..."></textarea>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button class="pill-btn" id="saveDraft" type="button">Save as Draft</button>
+        <button class="pill-btn primary" id="submit" type="button">Submit</button>
+      </div>
+
+      <div id="submitOut" class="submit-out hidden">
+        <h3>Submit payload (demo)</h3>
+        <pre id="payloadPre"></pre>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div class="backdrop" id="backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-top">
+        <div class="modal-title" id="modalTitle">Add Qualification</div>
+        <button class="icon-btn" id="closeModal" type="button" aria-label="Close">
+          <svg class="icon"><use href="#i-x"></use></svg>
+        </button>
+      </div>
+
+      <div class="form">
+        <label for="qSubject">Subject</label>
+        <input id="qSubject" placeholder="e.g., Mathematics" />
+
+        <label for="qLevelBtn">Level/Type</label>
+
+        <!-- Custom Dropdown (PDF-style) -->
+        <div class="dd" id="qLevelDD">
+          <button class="dd-btn" id="qLevelBtn" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="dd-value" id="qLevelValue">Select Level</span>
+            <span class="dd-chev" aria-hidden="true">
+              <svg class="icon"><use href="#i-chevron"></use></svg>
+            </span>
+          </button>
+
+          <div class="dd-menu" id="qLevelMenu" role="listbox" tabindex="-1"></div>
+
+          <!-- Hidden input used by JS validation + saving -->
+          <input type="hidden" id="qLevel" value="" />
+        </div>
+
+        <label for="qGrade">Grade</label>
+        <input id="qGrade" placeholder="e.g., A*, 9, Distinction" />
+
+        <label for="qYear">Year of Completion <span class="muted">(optional)</span></label>
+        <input id="qYear" inputmode="numeric" placeholder="e.g., 2024" />
+      </div>
+
+      <div class="error" id="modalErr"></div>
+
+      <div class="modal-actions">
+        <button class="pill-btn" id="cancelModal" type="button">Cancel</button>
+        <button class="pill-btn primary" id="addBtn" type="button">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
